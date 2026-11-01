@@ -1,0 +1,13 @@
+Source/obj/
+Source/bin/
+*.pdb
+*.deps.json
+
+.agents/
+.claude/
+.hermes/
+.vscode/
+.idea/
+plans/
+AGENTS.md
+CLAUDE.md

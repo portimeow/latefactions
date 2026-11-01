@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>LateFactions</AssemblyName>
+    <RootNamespace>LateFactions</RootNamespace>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <DebugType>none</DebugType>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <PathMap>$(MSBuildProjectDirectory)=.</PathMap>
+    <OutputPath>../1.7/Assemblies/</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GameDir>$(HOME)/.local/share/Steam/steamapps/common/RimWorld/</GameDir>
+    <FLDir>$(HOME)/.local/share/Steam/steamapps/workshop/content/294100/3450332059/1.7/Assemblies/</FLDir>
+    <HarmonyDir>$(HOME)/.local/share/Steam/steamapps/workshop/content/294100/2009463077/1.7/Assemblies/</HarmonyDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameDir)Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityStubs"><HintPath>$(GameDir)UnityStubs.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(HarmonyDir)0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="FactionLanguages"><HintPath>$(FLDir)FactionLanguages.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

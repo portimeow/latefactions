@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Rim Languages - Late Factions</name>
+	<author>portimeow</author>
+	<packageId>portimeow.factionlanguages.latefactions</packageId>
+	<url>https://github.com/portimeow/latefactions</url>
+	<description>Compatibility patch for Cybranian - Rim Languages. Factions created after world generation (Hegemony splinters, mid-save mod factions, quest factions) never get a dialect, which the base mod doesn't support. This assigns one on load and whenever such a faction appears: splinters and expeditions inherit the dialect of the faction whose name they contain, others take a same-def faction's dialect, and anything left gets a new dialect.</description>
+	<supportedVersions>
+		<li>1.7</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>DimonSever000.FactionLanguages</packageId>
+			<displayName>Cybranian - Rim Languages</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3450332059</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>DimonSever000.FactionLanguages</li>
+	</loadAfter>
+</ModMetaData>
