@@ -45,6 +45,8 @@ namespace LateFactions
 			if (db == null)
 				return;
 
+			// The base mod only rebuilds this lookup on load, so a faction added mid-game isn't in it yet.
+			LanguageUtility.FillMainRaceFactionDict();
 			EnsureCache(db);
 			Repair(db);
 

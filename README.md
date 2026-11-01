@@ -58,6 +58,7 @@ Source/LateFactions.csproj
 
 - Not tested outside one large modded save.
 - New dialects get generated names; you can't pick one.
+- A faction of a separate race with no language in the save stays unassigned: this patch adds dialects, not languages. Xenotype factions on the Human race aren't affected.
 - Creating a dialect writes private fields of Rim Languages' `Dialect` by reflection, so a Rim Languages update that renames them will need this updated.
 - The first load after removing this mod logs one harmless `Could not find class LateFactions.LateFactionAllocator` error.
 
